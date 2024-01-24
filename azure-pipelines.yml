@@ -24,6 +24,6 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)'
+    projectJsonPath: '$(Build.SourcesDirectory)\project.json'
     outputType: 'Library'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
